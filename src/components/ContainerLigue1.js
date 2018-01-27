@@ -26,8 +26,8 @@ export default class ContainerLigue1 extends React.Component {
 		    <div>
 		      	<ul className="league-nav row aligned-row">
 		      		<li className="col-xs-4"><NavLink to={`/ligue1/table`}><h5>Classement</h5></NavLink></li>
-			      	<li className="col-xs-4"><NavLink to={`/ligue1/lastmatchday`}><h5>Derniers résultats</h5></NavLink></li>
-			      	<li className="col-xs-4"><NavLink to={`/ligue1/nextmatchday`}><h5>Prochains matchs</h5></NavLink></li>
+			      	<li className="col-xs-4"><NavLink to={`/ligue1/lastmatchday`}><h5>Résultats</h5></NavLink></li>
+			      	<li className="col-xs-4"><NavLink to={`/ligue1/nextmatchday`}><h5>À venir</h5></NavLink></li>
 		    	</ul>
 		    	{/* Write routes here... */}
 		    	<Route exact path={`/ligue1`} render={() => <Redirect to={`/ligue1/table`}/>}/>

@@ -26,8 +26,8 @@ export default class ContainerSerieA extends React.Component {
 		    <div>
 		      	<ul className="league-nav row aligned-row">
 		      		<li className="col-xs-4"><NavLink to={`/seriea/table`}><h5>Classement</h5></NavLink></li>
-			      	<li className="col-xs-4"><NavLink to={`/seriea/lastmatchday`}><h5>Derniers résultats</h5></NavLink></li>
-			      	<li className="col-xs-4"><NavLink to={`/seriea/nextmatchday`}><h5>Prochains matchs</h5></NavLink></li>
+			      	<li className="col-xs-4"><NavLink to={`/seriea/lastmatchday`}><h5>Résultats</h5></NavLink></li>
+			      	<li className="col-xs-4"><NavLink to={`/seriea/nextmatchday`}><h5>À venir</h5></NavLink></li>
 		    	</ul>
 		    	{/* Write routes here... */}
 		    	<Route exact path={`/seriea`} render={() => <Redirect to={`/seriea/table`}/>}/>
