@@ -121,6 +121,10 @@
 	margin-top: 50px;
 }
 
+.search-input {
+	font-size: 1.5em;
+}
+
 .search-input > input {
   border-radius: 5px;
   border: none;
@@ -151,21 +155,17 @@
 }
 
 .search-list:hover {
-    transform: scale(1.1); 
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-}
-
-.search-list-content {
-	margin: 0;
+    transform: scale(1.05); 
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
 }
 
 /* --- search-result --- */
 
 .logo-team {
 	width: 100px;
-	margin-bottom: 20px;
-	margin-top: 10px;
+	margin-bottom: 30px;
+	margin-top: 15px;
 }
 
 .info-team-title {
@@ -192,6 +192,7 @@
 .league-result{
 	text-align: center;
 	margin-top: 2em;
+	margin-bottom: 1em;
 }
 
 .league-result-title {
@@ -204,6 +205,9 @@
 	text-align: center;
 	padding: 0;
 	list-style-type: none;
+	display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .league-nav a {

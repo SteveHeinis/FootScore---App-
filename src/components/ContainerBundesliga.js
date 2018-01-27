@@ -24,10 +24,10 @@ export default class ContainerBundesliga extends React.Component {
     return (
     	<div>
 		    <div>
-		      	<ul className="league-nav row">
-		      		<li className="col-xs-4"><NavLink to={`/bundesliga/table`}>Classement</NavLink></li>
-			      	<li className="col-xs-4"><NavLink to={`/bundesliga/lastmatchday`}>Derniers résultats</NavLink></li>
-			      	<li className="col-xs-4"><NavLink to={`/bundesliga/nextmatchday`}>Prochains matchs</NavLink></li>
+		      	<ul className="league-nav row aligned-row">
+		      		<li className="col-xs-4"><NavLink to={`/bundesliga/table`}><h5>Classement</h5></NavLink></li>
+			      	<li className="col-xs-4"><NavLink to={`/bundesliga/lastmatchday`}><h5>Derniers résultats</h5></NavLink></li>
+			      	<li className="col-xs-4"><NavLink to={`/bundesliga/nextmatchday`}><h5>Prochains matchs</h5></NavLink></li>
 		    	</ul>
 		    	{/* Write routes here... */}
 		    	<Route exact path={`/bundesliga`} render={() => <Redirect to={`/bundesliga/table`}/>}/>

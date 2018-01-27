@@ -695,17 +695,16 @@ class App extends Component {
 
     const newFilteredTeams = filteredTeams.slice(0,3).map(equipe => {
           return (
-            <div key={equipe.key}>
-                  <div className="search-list col-xs-8 col-xs-offset-1" onClick={this.openSearch}><p className="search-list-content">{equipe.equipe}</p></div>
+            <div key={equipe.key} className="container-fluid">
+                  <div className="search-list col-xs-12" onClick={this.openSearch}><h5>{equipe.equipe}</h5></div>
                   <Modal show={this.state.showModalSearch} onHide={this.closeSearch}>
                     <Modal.Header closeButton>
-                      <Modal.Title>LaLiga</Modal.Title>
+                      <div className="col-xs-12 info-team">
+                          <h2>{equipe.equipe}</h2>
+                        </div>
                     </Modal.Header>
                     <Modal.Body>
                       <div className="container-fluid">
-                        <div className="col-xs-12 info-team">
-                          <h2>{equipe.equipe}</h2>
-                        </div>
                         <div className="col-xs-12 info-team">
                           <img src={equipe.logo} className="logo-team" alt="logo equipe"/>
                         </div>
@@ -717,43 +716,47 @@ class App extends Component {
                           </div>
                         </div>
                         <div className="row aligned-row">
-                          <div className="col-xs-2 info-team">
+                          <div className="col-xs-4 info-team">
                             <h5>Position en championnat</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>Historique de la saison</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>Nombre de points</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                        </div>
+                        <div className="row aligned-row">
+                          <div className="col-xs-4  info-team">
+                            <h6>{equipe.position}</h6>
+                          </div>
+                          <div className="col-xs-4  info-team">
+                            <h6>{equipe.victoires}V  {equipe.nuls}N  {equipe.defaites}D</h6>
+                          </div>
+                          <div className="col-xs-4  info-team">
+                            <h6>{equipe.points}</h6>
+                          </div>
+                        </div>
+                        <div className="row aligned-row">
+                          <div className="col-xs-4  info-team">
                             <h5>Buts marqués</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>Buts encaissés</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>Différence de buts</h5>
                           </div>
                         </div>
                         <div className="row aligned-row">
-                          <div className="col-xs-2 info-team">
-                            <h5>{equipe.position}</h5>
+                          <div className="col-xs-4  info-team">
+                            <h6>{equipe.butsMarques}</h6>
                           </div>
-                          <div className="col-xs-2  info-team">
-                            <h5>{equipe.victoires}V  {equipe.nuls}N  {equipe.defaites}D</h5>
+                          <div className="col-xs-4  info-team">
+                            <h6>{equipe.butsEncaisses}</h6>
                           </div>
-                          <div className="col-xs-2  info-team">
-                            <h5>{equipe.points}</h5>
-                          </div>
-                          <div className="col-xs-2  info-team">
-                            <h5>{equipe.butsMarques}</h5>
-                          </div>
-                          <div className="col-xs-2  info-team">
-                            <h5>{equipe.butsEncaisses}</h5>
-                          </div>
-                          <div className="col-xs-2  info-team">
-                            <h5>{equipe.differenceDeButs}</h5>
+                          <div className="col-xs-4  info-team">
+                            <h6>{equipe.differenceDeButs}</h6>
                           </div>
                         </div>
                       </div>
@@ -764,38 +767,46 @@ class App extends Component {
                           </div>
                         </div>
                         <div className="row aligned-row">
-                          <div className="col-xs-2 col-xs-offset-1 info-team">
+                          <div className="col-xs-4 info-team">
                             <h5>Victoires</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>Nuls</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>Defaites</h5>
-                          </div>
-                          <div className="col-xs-2  info-team">
-                            <h5>Buts marqués</h5>
-                          </div>
-                          <div className="col-xs-2  info-team">
-                            <h5>Buts encaissés</h5>
                           </div>
                         </div>
                         <div className="row aligned-row">
-                          <div className="col-xs-2 col-md-offset-1 info-team">
+                          <div className="col-xs-4 info-team">
                             <h5>{equipe.victoiresDom}</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>{equipe.nulsDom}</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>{equipe.defaitesDom}</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                        </div>
+                        <div className="row aligned-row">
+                          <div className="col-xs-2"></div>
+                          <div className="col-xs-4  info-team">
+                            <h5>Buts marqués</h5>
+                          </div>
+                          <div className="col-xs-4  info-team">
+                            <h5>Buts encaissés</h5>
+                          </div>
+                          <div className="col-xs-2"></div>
+                        </div>
+                        <div className="row aligned-row">
+                          <div className="col-xs-2"></div>
+                          <div className="col-xs-4  info-team">
                             <h5>{equipe.butsDom}</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>{equipe.butsEncaissesDom}</h5>
                           </div>
+                          <div className="col-xs-2"></div>
                         </div>
                       </div>
                       <div className="container-fluid container-stat">
@@ -805,38 +816,46 @@ class App extends Component {
                           </div>
                         </div>
                         <div className="row aligned-row">
-                          <div className="col-xs-2 col-md-offset-1 info-team">
+                          <div className="col-xs-4 info-team">
                             <h5>Victoires</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>Nuls</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>Defaites</h5>
-                          </div>
-                          <div className="col-xs-2  info-team">
-                            <h5>Buts marqués</h5>
-                          </div>
-                          <div className="col-xs-2  info-team">
-                            <h5>Buts encaissés</h5>
                           </div>
                         </div>
                         <div className="row aligned-row">
-                          <div className="col-xs-2 col-md-offset-1 info-team">
+                          <div className="col-xs-4 info-team">
                             <h5>{equipe.victoiresExt}</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>{equipe.nulsExt}</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>{equipe.defaitesExt}</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                        </div>
+                        <div className="row aligned-row">
+                          <div className="col-xs-2"></div>
+                          <div className="col-xs-4  info-team">
+                            <h5>Buts marqués</h5>
+                          </div>
+                          <div className="col-xs-4  info-team">
+                            <h5>Buts encaissés</h5>
+                          </div>
+                          <div className="col-xs-2"></div>
+                        </div>
+                        <div className="row aligned-row">
+                          <div className="col-xs-2"></div>
+                          <div className="col-xs-4  info-team">
                             <h5>{equipe.butsExt}</h5>
                           </div>
-                          <div className="col-xs-2  info-team">
+                          <div className="col-xs-4  info-team">
                             <h5>{equipe.butsEncaissesExt}</h5>
                           </div>
+                          <div className="col-xs-2"></div>
                         </div>
                       </div>
                     </Modal.Body>
@@ -962,11 +981,12 @@ class App extends Component {
               <div className="search-part">
               <h2>Trouver une équipe</h2>
               <div className="container">
-                <div className="col-xs-4"></div>
-                <div className="col-xs-4 search-input-container">
+                <div className="col-xs-3"></div>
+                <div className="col-xs-6 search-input-container">
                   <SearchInput className="search-input" placeholder="Entrez une équipe..." onChange={this.searchUpdated} />
                   {this.filteredTeam(newFilteredTeams)}
                 </div>
+                <div className="col-xs-3"></div>
               </div>
               </div>
             </div>
