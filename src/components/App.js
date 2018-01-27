@@ -69,7 +69,7 @@ class App extends Component {
 
   tableLigue1 = () => {
 
-    fetch('http://api.football-data.org/v1/competitions/450/leagueTable',
+    fetch('https://api.football-data.org/v1/competitions/450/leagueTable',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -116,7 +116,7 @@ class App extends Component {
 
   lastMatchsLigue1 = () => {
 
-    fetch('http://api.football-data.org/v1/fixtures?timeFrame=p60&league=FL1',
+    fetch('https://api.football-data.org/v1/fixtures?timeFrame=p60&league=FL1',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -145,7 +145,7 @@ class App extends Component {
   } 
 
   nextMatchsLigue1 = () => {
-    fetch('http://api.football-data.org/v1/fixtures?timeFrame=n60&league=FL1',
+    fetch('https://api.football-data.org/v1/fixtures?timeFrame=n60&league=FL1',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -177,7 +177,7 @@ class App extends Component {
 
   tableSerieA = () => {
 
-    fetch('http://api.football-data.org/v1/competitions/456/leagueTable',
+    fetch('https://api.football-data.org/v1/competitions/456/leagueTable',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -224,7 +224,7 @@ class App extends Component {
 
   lastMatchsSerieA = () => {
 
-    fetch('http://api.football-data.org/v1/fixtures?timeFrame=p60&league=SA',
+    fetch('https://api.football-data.org/v1/fixtures?timeFrame=p60&league=SA',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -253,7 +253,7 @@ class App extends Component {
   } 
 
   nextMatchsSerieA = () => {
-    fetch('http://api.football-data.org/v1/fixtures?timeFrame=n60&league=SA',
+    fetch('https://api.football-data.org/v1/fixtures?timeFrame=n60&league=SA',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -285,7 +285,7 @@ class App extends Component {
 
   tableBundesliga = () => {
 
-    fetch('http://api.football-data.org/v1/competitions/452/leagueTable',
+    fetch('https://api.football-data.org/v1/competitions/452/leagueTable',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -332,7 +332,7 @@ class App extends Component {
 
   lastMatchsBundesliga = () => {
 
-    fetch('http://api.football-data.org/v1/fixtures?timeFrame=p60&league=BL1',
+    fetch('https://api.football-data.org/v1/fixtures?timeFrame=p60&league=BL1',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -361,7 +361,7 @@ class App extends Component {
   } 
 
   nextMatchsBundesliga = () => {
-    fetch('http://api.football-data.org/v1/fixtures?timeFrame=n60&league=BL1',
+    fetch('https://api.football-data.org/v1/fixtures?timeFrame=n60&league=BL1',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -393,7 +393,7 @@ class App extends Component {
 
   tableLiga = () => {
 
-    fetch('http://api.football-data.org/v1/competitions/455/leagueTable',
+    fetch('https://api.football-data.org/v1/competitions/455/leagueTable',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -440,7 +440,7 @@ class App extends Component {
 
   lastMatchsLiga = () => {
 
-    fetch('http://api.football-data.org/v1/fixtures?timeFrame=p60&league=PD',
+    fetch('https://api.football-data.org/v1/fixtures?timeFrame=p60&league=PD',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -469,7 +469,7 @@ class App extends Component {
   } 
 
   nextMatchsLiga = () => {
-    fetch('http://api.football-data.org/v1/fixtures?timeFrame=n60&league=PD',
+    fetch('https://api.football-data.org/v1/fixtures?timeFrame=n60&league=PD',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -501,7 +501,7 @@ class App extends Component {
 
   tablePremierLeague = () => {
 
-    fetch('http://api.football-data.org/v1/competitions/445/leagueTable',
+    fetch('https://api.football-data.org/v1/competitions/445/leagueTable',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -548,7 +548,7 @@ class App extends Component {
 
   lastMatchsPremierLeague = () => {
 
-    fetch('http://api.football-data.org/v1/fixtures?timeFrame=p60&league=PL',
+    fetch('https://api.football-data.org/v1/fixtures?timeFrame=p60&league=PL',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
@@ -577,7 +577,7 @@ class App extends Component {
   } 
 
   nextMatchsPremierLeague = () => {
-    fetch('http://api.football-data.org/v1/fixtures?timeFrame=n60&league=PL',
+    fetch('https://api.football-data.org/v1/fixtures?timeFrame=n60&league=PL',
       {
         headers: {
           'X-Auth-Token': '8f939c7c1a43480bba08529ef7500c75'
