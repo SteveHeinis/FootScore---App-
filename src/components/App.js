@@ -857,7 +857,7 @@ class App extends Component {
         <BrowserRouter>
           <div className="app">
             <div className="bg"></div>
-            <h1 className="main-title">FootScore</h1>
+            <h1 className="main-title">FootStats</h1>
             <div className="container">
               <h2>Choisir un championnat</h2>
               <div className="row logo-row">
